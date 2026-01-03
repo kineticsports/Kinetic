@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: white;
+    text-align: center;
+    border-bottom: 4px double #000;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    letter-spacing: -1px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsive Grid Layout */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Desktop: 2 columns */
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* Image styles */
+img { width: 100%; border-radius: 4px; }
+
+.hero-image { position: relative; }
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 20px;
+}
+
+.category { background: red; padding: 3px 8px; font-size: 0.7rem; text-transform: uppercase; }
+
+/* Responsive Adjustment for Mobile */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+    }
+    header h1 { font-size: 2rem; }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
