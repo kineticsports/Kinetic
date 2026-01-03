@@ -1,0 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Newspaper site loaded!");
+    
+    // Example: Add a simple greeting based on time
+    const header = document.querySelector('.top-nav span');
+    const hour = new Date().getHours();
+    
+    if (hour < 12) {
+        header.innerHTML += " | Good Morning";
+    } else {
+        header.innerHTML += " | Good Evening";
+    }
+});
